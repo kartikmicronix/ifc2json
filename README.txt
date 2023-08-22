@@ -1,4 +1,3 @@
-```
 const axios = require('axios');
 const FormData = require('form-data');
 const fs = require('fs');
@@ -22,5 +21,3 @@ axios.request(config)
 .catch((error) => {
   console.log(error);
 });
-
-```
