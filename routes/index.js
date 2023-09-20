@@ -20,7 +20,7 @@ router.post("/ifc2json", upload.single("file"), function (req, res, next) {
   // file is not getting correctly stored in files folder
   console.log(req.file);
   exec(
-    `IfcConvert-win.exe ${req.file.path} output/${
+    `IfcConvert-darwin ${req.file.path} output/${
       req.file.originalname.split(".")[0]
     }.xml`
   ).on("exit", () => {
